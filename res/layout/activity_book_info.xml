@@ -17,7 +17,7 @@
             android:src="@drawable/ic_launcher" />
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 
@@ -29,8 +29,15 @@
             <TextView
                 android:id="@+id/bookTitle"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Download" />
     </LinearLayout>
 
     <TextView

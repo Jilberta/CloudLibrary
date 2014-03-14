@@ -54,9 +54,7 @@ public class GPSTracker extends Service implements LocationListener {
     public Location getLocation() {
         try {
             locationManager = (LocationManager) ctx.getSystemService(LOCATION_SERVICE);
-
             isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-
             isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
             if (!isGPSEnabled && !isNetworkEnabled) {
@@ -109,13 +107,13 @@ public class GPSTracker extends Service implements LocationListener {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(ctx);
 
         // Setting Dialog Title
-        alertDialog.setTitle("GPS is settings");
+        alertDialog.setTitle("ჯიპიეს სისტემა");
 
         // Setting Dialog Message
-        alertDialog.setMessage("GPS is not enabled. Do you want to go to settings menu?");
+        alertDialog.setMessage("ჯიპიეს სისტემა არ გაქვთ ჩართული, გსურთ გააქტიურება ?");
 
         // On pressing Settings button
-        alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton("დიახ", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int which) {
                 Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                 ctx.startActivity(intent);
@@ -123,7 +121,7 @@ public class GPSTracker extends Service implements LocationListener {
         });
 
         // on pressing cancel button
-        alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        alertDialog.setNegativeButton("არა", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
             }

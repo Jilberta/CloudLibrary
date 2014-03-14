@@ -2,6 +2,7 @@ package com.example.cloudlibrary;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
@@ -16,12 +17,17 @@ public class MainActivity extends Activity {
 	}
 
 	public void onClick(View v) {
+		Intent k;
 		switch (v.getId()) {
 		case R.id.books:
 			Toast.makeText(this, "books", Toast.LENGTH_LONG).show();
+//			k = new Intent(MainActivity.this, BooksListActivity.class);
+//			startActivity(k);
 			break;
 		case R.id.comments:
 			Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
+			//k = new Intent(MainActivity.this, CommentsActivity.class);
+			//startActivity(k);
 			break;
 		default:
 			break;

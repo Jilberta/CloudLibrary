@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.cloudlibrary.net.SyncBookList;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -34,8 +36,10 @@ public class MainActivity extends Activity {
                 if (gps.canGetLocation()) {
                     double latitude = gps.getLatitude();
                     double longitude = gps.getLongitude();
+//                    Toast.makeText(this, "Your Location is: \nLatitude: " + latitude + "\nLongitude: " + longitude, Toast.LENGTH_LONG).show();
 
-                    Toast.makeText(this, "Your Location is: \nLatitude: " + latitude + "\nLongitude: " + longitude, Toast.LENGTH_LONG).show();
+                    SyncBookList sync = new SyncBookList(this);
+                    sync.makeRequest(longitude, latitude);
                 }else{
                     gps.showSettingsAlert();
                 }

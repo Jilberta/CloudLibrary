@@ -3,8 +3,11 @@ package com.example.cloudlibrary;
 import com.example.cloudlibrary.model.Book;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class BookInfoActivity extends Activity {
 	
@@ -24,5 +27,16 @@ public class BookInfoActivity extends Activity {
 		bookTitle.setText(b.getTitle());
 		bookDescr.setText(b.getBriefDescription());
 	}
+	
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.download:
+               Toast.makeText(this, "download", Toast.LENGTH_SHORT).show();
+               break;
+            default:
+                break;
+        }
+    }
+
 
 }

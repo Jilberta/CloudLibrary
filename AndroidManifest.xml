@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.cloudlibrary.BooksListActivity"
+            android:label="Books" >
+        </activity>
+        <activity
+            android:name="com.example.cloudlibrary.BookInfoActivity"
+            android:label="Book Info" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

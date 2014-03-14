@@ -1,5 +1,9 @@
 package com.example.cloudlibrary;
 
+import java.util.ArrayList;
+
+import com.example.cloudlibrary.model.Book;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,14 +11,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class CustomAdapter extends ArrayAdapter<String> {
+public class CustomAdapter extends ArrayAdapter<Book> {
 	private final Context context;
-	private final String[] values;
+	private final ArrayList<Book> values;
 
-	public CustomAdapter(Context context, String[] values) {
-		super(context, R.layout.list_item, values);
+	public CustomAdapter(Context context, ArrayList<Book> books) {
+		super(context, R.layout.list_item, books);
 		this.context = context;
-		this.values = values;
+		this.values = books;
 	}
 
 	@Override
@@ -23,7 +27,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.list_item, parent, false);
 		TextView textView = (TextView) rowView.findViewById(R.id.bookName);
-		textView.setText(values[position]);
+		textView.setText(values.get(position).getTitle());
 
 		return rowView;
 	}

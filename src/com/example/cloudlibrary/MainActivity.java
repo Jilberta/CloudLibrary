@@ -21,13 +21,16 @@ public class MainActivity extends Activity {
 		switch (v.getId()) {
 		case R.id.books:
 			Toast.makeText(this, "books", Toast.LENGTH_LONG).show();
-//			k = new Intent(MainActivity.this, BooksListActivity.class);
-//			startActivity(k);
+			k = new Intent(MainActivity.this, BooksListActivity.class);
+			startActivity(k);
 			break;
 		case R.id.comments:
 			Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
 			//k = new Intent(MainActivity.this, CommentsActivity.class);
 			//startActivity(k);
+			break;
+		case R.id.test:
+			Toast.makeText(this, "test", Toast.LENGTH_LONG).show();
 			break;
 		default:
 			break;

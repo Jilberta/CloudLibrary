@@ -2,9 +2,7 @@ package com.example.cloudlibrary;
 
 
 import java.util.ArrayList;
-
 import com.example.cloudlibrary.model.Book;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,26 +18,8 @@ public class BooksListActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_book_list);
 		final ListView listview = (ListView) findViewById(R.id.booksList);
-		ArrayList<Book> books = new ArrayList<Book>();
-		
-		
-		Book b1 = new Book();
-		Book b2 = new Book();
-		Book b3 = new Book();
-		Book b4 = new Book();
-		b1.setTitle("Kacia-adamiani?!");
-		b1.setAuthorInfo("Ilia Chavchavadze");
-		b1.setBriefDescription("dahsihdash dhahdhdash asudasiyd djaosjdjdo dasojdaosjdasoij");
-		b2.setTitle("Vefxistyaosani");
-		b2.setAuthorInfo("Shota Rustaveli");
-		b3.setTitle("Sibrdzne-Sicruisa");
-		b3.setAuthorInfo("Sulxan-Saba Orbeliani");
-		b4.setAuthorInfo("Kote, Kikola, Jilberta, Laki");
-		b4.setTitle("Cloud Library");
-		books.add(b1);
-		books.add(b2);
-		books.add(b3);
-		books.add(b4);
+
+        ArrayList<Book> books = (ArrayList<Book>) getIntent().getSerializableExtra("BookList");
 
 		final CustomAdapter adapter = new CustomAdapter(this, books);
 		listview.setAdapter(adapter);

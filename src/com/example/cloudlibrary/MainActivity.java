@@ -22,16 +22,6 @@ public class MainActivity extends Activity {
         Intent k;
         switch (v.getId()) {
             case R.id.books:
-                Toast.makeText(this, "books", Toast.LENGTH_LONG).show();
-                k = new Intent(MainActivity.this, BooksListActivity.class);
-                startActivity(k);
-                break;
-            case R.id.comments:
-                Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
-                //k = new Intent(MainActivity.this, CommentsActivity.class);
-                //startActivity(k);
-                break;
-            case R.id.test:
                 GPSTracker gps = new GPSTracker(this);
                 if (gps.canGetLocation()) {
                     double latitude = gps.getLatitude();
@@ -43,6 +33,14 @@ public class MainActivity extends Activity {
                 }else{
                     gps.showSettingsAlert();
                 }
+                break;
+            case R.id.comments:
+                Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
+                //k = new Intent(MainActivity.this, CommentsActivity.class);
+                //startActivity(k);
+                break;
+            case R.id.test:
+
                 break;
             default:
                 break;

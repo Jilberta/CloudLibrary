@@ -230,7 +230,7 @@
       <file leaf-file-name="GPSTracker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/controllers/GPSTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="25" selection-start="1332" selection-end="1332" vertical-scroll-proportion="-1.1486486" vertical-offset="1224" max-vertical-offset="2771">
+            <state line="138" column="42" selection-start="4732" selection-end="4732" vertical-scroll-proportion="0.22972973" vertical-offset="2193" max-vertical-offset="2788">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -569,7 +569,7 @@
     <property name="options.lastSelected" value="project.propCompiler" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/core-2.0.jar" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="034413dd251c67f8" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="04a7566a13afcc97" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="avd" />
@@ -1008,7 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/controllers/GPSTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1332" selection-end="1332" vertical-scroll-proportion="-1.1486486" vertical-offset="1224" max-vertical-offset="2771">
+        <state line="138" column="42" selection-start="4732" selection-end="4732" vertical-scroll-proportion="0.22972973" vertical-offset="2193" max-vertical-offset="2788">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.cloudlibrary.R;
+import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.model.Comment;
 
 import java.util.ArrayList;

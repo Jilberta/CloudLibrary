@@ -4,15 +4,21 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Intent;
+//import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.TextView;
+//import android.widget.Toast;
 
 import com.example.cloudlibrary.controllers.GPSTracker;
-import com.example.cloudlibrary.R;
+import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.net.SyncBookList;
 import com.example.cloudlibrary.net.SyncCommentList;
+import com.facebook.Request;
+import com.facebook.Response;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.model.GraphUser;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,11 +30,31 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        Session.openActiveSession(this, true, new Session.StatusCallback() {
 
+            // callback when session changes state
+            @Override
+            public void call(Session session, SessionState state, Exception exception) {
+              if (session.isOpened()) {
+
+              	Request.newMeRequest(session, new Request.GraphUserCallback() {
+      				
+      				@Override
+      				public void onCompleted(GraphUser user, Response response) {
+      					if (user != null) {
+      		                TextView welcome = (TextView) findViewById(R.id.welcome);
+      		                welcome.setText("Hello " + user.getName() + "!");
+      		              }
+      				}
+      			}).executeAsync();
+              }
+            }
+          });
     }
 
     public void onClick(View v) {
-        Intent k;
+//        Intent k;
         switch (v.getId()) {
             case R.id.books:
                 GPSTracker gps = new GPSTracker(this);

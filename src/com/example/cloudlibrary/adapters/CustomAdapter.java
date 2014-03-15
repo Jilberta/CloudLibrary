@@ -2,7 +2,7 @@ package com.example.cloudlibrary.adapters;
 
 import java.util.ArrayList;
 
-import com.example.cloudlibrary.R;
+import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.model.Book;
 
 import android.content.Context;

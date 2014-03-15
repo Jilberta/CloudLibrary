@@ -1,6 +1,6 @@
 package com.example.cloudlibrary.activities;
 
-import com.example.cloudlibrary.R;
+import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.model.Book;
 
 import android.app.Activity;

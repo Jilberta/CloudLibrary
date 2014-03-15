@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.cloudlibrary.R;
+import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.adapters.CommentListViewAdapter;
 import com.example.cloudlibrary.model.Comment;
 

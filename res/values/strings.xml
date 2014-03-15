@@ -4,5 +4,6 @@
     <string name="app_name">CloudLibrary</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="app_id">274490569392551</string>
 
 </resources>

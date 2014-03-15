@@ -1,7 +1,10 @@
 package com.example.cloudlibrary.activities;
 
 import java.io.File;
-
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import com.example.cloudlibrary.helpers.ServiceAddresses;
 import com.example.cloudlibrary.model.Book;
 import com.example.cloudlibrary.qrcode.Contents;
@@ -16,8 +19,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Display;
@@ -40,11 +45,25 @@ public class BookInfoActivity extends Activity {
 
 		b = (Book) getIntent().getSerializableExtra("book");
 
+        ImageView bookImage = (ImageView) findViewById(R.id.bookImage);
 		TextView bookAuthor = (TextView) findViewById(R.id.bookAuthor);
 		TextView bookTitle = (TextView) findViewById(R.id.bookTitle);
 		TextView bookDescr = (TextView) findViewById(R.id.reviewTxt);
 
-		bookAuthor.setText(b.getAuthorInfo());
+      /*  URL newurl = null;
+        try {
+            newurl = new URL(ServiceAddresses.IP + b.getImageUrl());
+            Bitmap bitmap;
+            BitmapFactory.Options o = new BitmapFactory.Options();
+            bitmap = BitmapFactory.decodeStream((InputStream)newurl.getContent(), null, o);
+            bookImage.setImageBitmap(bitmap);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+
+        bookAuthor.setText(b.getAuthorInfo());
 		bookTitle.setText(b.getTitle());
 		bookDescr.setText(b.getBriefDescription());
 	}

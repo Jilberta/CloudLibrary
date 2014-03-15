@@ -8,6 +8,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <com.facebook.widget.LoginButton
+        android:id="@+id/authButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+    
+    
     <Button
         android:id="@+id/books"
         android:layout_width="wrap_content"
@@ -39,9 +48,33 @@
     
     <TextView
         android:id="@+id/welcome"
-        android:text="@+id/hello_world"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/comments"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         />
+    
+     <ImageView
+         		android:contentDescription="This guy is good"
+                android:id="@+id/ProfilePic"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.4"
+                android:layout_marginRight="6dip"
+                android:layout_below="@+id/welcome"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_launcher"/>
+    
+    <Button
+    android:id="@+id/shareButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:visibility="invisible"
+    android:text="@string/share"
+    />
 
 </RelativeLayout>

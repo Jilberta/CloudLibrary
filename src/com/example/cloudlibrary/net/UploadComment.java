@@ -3,15 +3,18 @@ package com.example.cloudlibrary.net;
 import android.app.ProgressDialog;
 import android.content.Context;
 
+import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.helpers.ServiceAddresses;
 import com.example.cloudlibrary.parsers.GenerateCommentJson;
 import com.example.cloudlibrary.volley.Request;
 import com.example.cloudlibrary.volley.RequestQueue;
 import com.example.cloudlibrary.volley.Response;
 import com.example.cloudlibrary.volley.VolleyError;
+import com.example.cloudlibrary.volley.toolbox.JsonArrayRequest;
 import com.example.cloudlibrary.volley.toolbox.JsonObjectRequest;
 import com.example.cloudlibrary.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -36,6 +39,9 @@ public class UploadComment {
                     @Override
                     public void onResponse(JSONObject response) {
                         progress.dismiss();
+//                        SyncCommentList sync = new SyncCommentList(ctx);
+//                        GPSTracker gp = new GPSTracker(ctx);
+//                        sync.makeRequest(gp.getLongitude(), gp.getLatitude());
                     }
                 }, new Response.ErrorListener() {
                     @Override

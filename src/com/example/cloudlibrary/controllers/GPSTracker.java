@@ -53,7 +53,6 @@ public class GPSTracker extends Service implements LocationListener {
     }
 
     public Location getLocation() {
-        Toast.makeText(ctx, "av", Toast.LENGTH_LONG).show();
         try {
             locationManager = (LocationManager) ctx.getSystemService(LOCATION_SERVICE);
             isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
@@ -135,8 +134,7 @@ public class GPSTracker extends Service implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-        longitude = location.getLongitude();
-        latitude = location.getLatitude();
+        this.location = location;
         Toast.makeText(ctx, "Update is Done: \nLongitude: " + getLongitude() + "\nLatitude: " + getLatitude(), Toast.LENGTH_LONG).show();
     }
 

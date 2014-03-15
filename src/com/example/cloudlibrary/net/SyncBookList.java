@@ -43,7 +43,7 @@ public class SyncBookList {
                     Intent k = new Intent(ctx, BooksListActivity.class);
                     k.putExtra("BookList", bookList);
                     ctx.startActivity(k);
-                    Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
+//                    Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
                 }
             }, new Response.ErrorListener() {
                 @Override
@@ -62,7 +62,7 @@ public class SyncBookList {
         list.add(new BasicNameValuePair("longitude", String.valueOf(longitude)));
         list.add(new BasicNameValuePair("latitude", String.valueOf(latitude)));
 
-        return ServiceAddresses.BOOK_LIST_URL + URLEncodedUtils.format(list, "UTF-8");
+        return ServiceAddresses.IP + ServiceAddresses.BOOK_LIST_URL + URLEncodedUtils.format(list, "UTF-8");
     }
 
 }

@@ -11,6 +11,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
+import android.widget.Toast;
 
 /**
  * Created by Jay on 3/14/14.
@@ -52,6 +53,7 @@ public class GPSTracker extends Service implements LocationListener {
     }
 
     public Location getLocation() {
+        Toast.makeText(ctx, "av", Toast.LENGTH_LONG).show();
         try {
             locationManager = (LocationManager) ctx.getSystemService(LOCATION_SERVICE);
             isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
@@ -131,10 +133,10 @@ public class GPSTracker extends Service implements LocationListener {
         alertDialog.show();
     }
 
-
     @Override
     public void onLocationChanged(Location location) {
-
+        getLocation();
+        Toast.makeText(ctx, "Update is Done: \nLongitude: " + getLongitude() + "\nLatitude: " + getLatitude(), Toast.LENGTH_LONG).show();
     }
 
     @Override

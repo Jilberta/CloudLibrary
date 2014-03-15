@@ -2,6 +2,7 @@ package com.example.cloudlibrary.activities;
 
 import android.location.Address;
 import android.location.Geocoder;
+import android.location.LocationListener;
 import android.os.Bundle;
 import android.app.Activity;
 //import android.content.Intent;
@@ -9,7 +10,6 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 //import android.widget.Toast;
-
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.net.SyncBookList;
@@ -19,7 +19,6 @@ import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.model.GraphUser;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -30,7 +29,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
+        GPSTracker gp = new GPSTracker(this);
+        gp.getLocation();
+
+
         Session.openActiveSession(this, true, new Session.StatusCallback() {
 
             // callback when session changes state
@@ -95,11 +98,7 @@ public class MainActivity extends Activity {
                 }else{
                     gps2.showSettingsAlert();
                 }
-
                 break;
-//            case R.id.test:
-//
-//                break;
             default:
                 break;
         }

@@ -1,12 +1,11 @@
 package com.example.cloudlibrary.activities;
 
-import com.example.cloudlibrary.activities.R;
+
 import com.example.cloudlibrary.model.Book;
 import com.example.cloudlibrary.qrcode.Contents;
 import com.example.cloudlibrary.qrcode.QRCodeEncoder;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
-
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Point;
@@ -52,7 +51,6 @@ public class BookInfoActivity extends Activity {
 	}
 
 	private void generateCRCode() {
-
 		// Find screen size
 		WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
 		Display display = manager.getDefaultDisplay();
@@ -73,7 +71,5 @@ public class BookInfoActivity extends Activity {
 		} catch (WriterException e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }

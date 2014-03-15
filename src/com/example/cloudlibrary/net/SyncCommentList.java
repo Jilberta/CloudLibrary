@@ -45,7 +45,7 @@ public class SyncCommentList {
                 Intent k = new Intent(ctx, CommentListActivity.class);
                 k.putExtra("CommentList", commentList);
                 ctx.startActivity(k);
-                Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -64,6 +64,6 @@ public class SyncCommentList {
         list.add(new BasicNameValuePair("longitude", String.valueOf(longitude)));
         list.add(new BasicNameValuePair("latitude", String.valueOf(latitude)));
 
-        return ServiceAddresses.COMMENT_LIST_URL + URLEncodedUtils.format(list, "UTF-8");
+        return ServiceAddresses.IP + ServiceAddresses.COMMENT_LIST_URL + URLEncodedUtils.format(list, "UTF-8");
     }
 }

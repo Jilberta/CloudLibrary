@@ -1,5 +1,6 @@
 package com.example.cloudlibrary.activities;
 
+import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.activities.R;
+import com.example.cloudlibrary.helpers.GlobalConst;
 import com.example.cloudlibrary.net.SyncBookList;
 import com.example.cloudlibrary.net.SyncCommentList;
 import com.facebook.Request;
@@ -36,6 +38,8 @@ public class MainActivity extends FragmentActivity {
 	private MainFragment mainFragment;
 
 	private SharedPreferences prefs;
+
+    private ProgressDialog progress;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +122,8 @@ public class MainActivity extends FragmentActivity {
 		// Intent k;
 		switch (v.getId()) {
 		case R.id.books:
-			GPSTracker gps = new GPSTracker(this);
+            progress = ProgressDialog.show(this, "", "Gtxovt Daicadot");
+			GPSTracker gps = new GPSTracker(this, GlobalConst.BOOKS_LIST_PAGE);
 			if (gps.canGetLocation()) {
 				double latitude = gps.getLatitude();
 				double longitude = gps.getLongitude();
@@ -138,17 +143,15 @@ public class MainActivity extends FragmentActivity {
 					e.printStackTrace();
 				}
 
-				SyncBookList sync = new SyncBookList(this);
+				SyncBookList sync = new SyncBookList(this, progress);
 				sync.makeRequest(longitude, latitude);
 			} else {
 				gps.showSettingsAlert();
 			}
 			break;
 		case R.id.comments:
-			// Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
-			// k = new Intent(MainActivity.this, CommentsActivity.class);
-			// startActivity(k);
-			GPSTracker gps2 = new GPSTracker(this);
+            progress = ProgressDialog.show(this, "", "Gtxovt Daicadot");
+			GPSTracker gps2 = new GPSTracker(this, GlobalConst.COMMENTS_LIST_PAGE);
 			if (gps2.canGetLocation()) {
 				double latitude = gps2.getLatitude();
 				double longitude = gps2.getLongitude();
@@ -156,16 +159,13 @@ public class MainActivity extends FragmentActivity {
 				// latitude + "\nLongitude: " + longitude,
 				// Toast.LENGTH_LONG).show();
 
-				SyncCommentList syncComment = new SyncCommentList(this);
+				SyncCommentList syncComment = new SyncCommentList(this, progress);
 				syncComment.makeRequest(longitude, latitude);
 			} else {
 				gps2.showSettingsAlert();
 			}
 
 			break;
-		// case R.id.test:
-		//
-		// break;
 		default:
 			break;
 		}

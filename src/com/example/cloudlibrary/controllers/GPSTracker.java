@@ -13,6 +13,8 @@ import android.os.IBinder;
 import android.provider.Settings;
 import android.widget.Toast;
 
+import com.example.cloudlibrary.helpers.GlobalConst;
+
 /**
  * Created by Jay on 3/14/14.
  */
@@ -27,10 +29,12 @@ public class GPSTracker extends Service implements LocationListener {
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
     private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1;
     protected LocationManager locationManager;
+    private int currentPageType;
 
 
-    public GPSTracker(Context ctx) {
+    public GPSTracker(Context ctx, int currentPageType) {
         this.ctx = ctx;
+        this.currentPageType = currentPageType;
         getLocation();
     }
 
@@ -135,7 +139,7 @@ public class GPSTracker extends Service implements LocationListener {
     @Override
     public void onLocationChanged(Location location) {
         this.location = location;
-        Toast.makeText(ctx, "Update is Done: \nLongitude: " + getLongitude() + "\nLatitude: " + getLatitude(), Toast.LENGTH_LONG).show();
+//        Toast.makeText(ctx, "Update is Done: \nLongitude: " + getLongitude() + "\nLatitude: " + getLatitude(), Toast.LENGTH_LONG).show();
     }
 
     @Override

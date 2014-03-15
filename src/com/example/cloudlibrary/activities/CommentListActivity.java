@@ -6,13 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-
-import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.adapters.CommentListViewAdapter;
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.model.Comment;
 import com.example.cloudlibrary.net.UploadComment;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;

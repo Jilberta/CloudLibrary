@@ -29,8 +29,9 @@ public class SyncCommentList {
     private Context ctx;
     private ProgressDialog progress;
 
-    public SyncCommentList(Context ctx){
+    public SyncCommentList(Context ctx, ProgressDialog progress){
         this.ctx = ctx;
+        this.progress = progress;
     }
 
     public void makeRequest(double longitude, double latitude){
@@ -54,7 +55,7 @@ public class SyncCommentList {
             }
         });
 
-        progress = ProgressDialog.show(ctx, "", "Gtxovt Daicadot");
+//        progress = ProgressDialog.show(ctx, "", "Gtxovt Daicadot");
         queue.add(arrayRequest);
     }
 

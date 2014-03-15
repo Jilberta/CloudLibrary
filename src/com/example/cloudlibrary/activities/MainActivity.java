@@ -1,5 +1,7 @@
 package com.example.cloudlibrary.activities;
 
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +13,10 @@ import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.R;
 import com.example.cloudlibrary.net.SyncBookList;
 import com.example.cloudlibrary.net.SyncCommentList;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Locale;
 
 public class MainActivity extends Activity {
 
@@ -30,6 +36,17 @@ public class MainActivity extends Activity {
                     double latitude = gps.getLatitude();
                     double longitude = gps.getLongitude();
 //                    Toast.makeText(this, "Your Location is: \nLatitude: " + latitude + "\nLongitude: " + longitude, Toast.LENGTH_LONG).show();
+
+                    Geocoder gc = new Geocoder(this, new Locale("en"));
+                    try {
+                        ArrayList<Address> list = (ArrayList<Address>) gc.getFromLocation(longitude, latitude, 5);
+                        for(int i = 0; i < list.size(); i++){
+                            Address addr = list.get(i);
+                            System.out.println("ASd");
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 
                     SyncBookList sync = new SyncBookList(this);
                     sync.makeRequest(longitude, latitude);

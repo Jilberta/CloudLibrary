@@ -24,6 +24,11 @@ public class CommentListViewAdapter extends BaseAdapter {
         this.commentList = commentList;
     }
 
+    public void setNewValues(ArrayList<Comment> commentList){
+        this.commentList = commentList;
+        notifyDataSetChanged();
+    }
+
     @Override
     public int getCount() {
         return commentList.size();

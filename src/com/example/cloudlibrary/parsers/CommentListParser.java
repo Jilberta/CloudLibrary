@@ -11,11 +11,11 @@ import java.util.ArrayList;
  */
 public class CommentListParser {
 
-    public static ArrayList<Comment> getCommentListFromResponse(JSONArray response){
+    public static ArrayList<Comment> getCommentListFromResponse(JSONArray response) {
         ArrayList<Comment> commentList = new ArrayList<Comment>();
         JSONObject obj;
         Comment commentItem;
-        for(int i = 0; i < response.length(); i++){
+        for (int i = 0; i < response.length(); i++) {
             try {
                 obj = response.getJSONObject(i);
                 commentItem = new Comment();
@@ -26,6 +26,27 @@ public class CommentListParser {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+        }
+        return commentList;
+    }
+
+    public static ArrayList<Comment> getUpdatedCommentList(JSONObject response) {
+        ArrayList<Comment> commentList = new ArrayList<Comment>();
+        JSONObject obj;
+        JSONArray arr;
+        Comment commentItem;
+        try {
+            arr = response.getJSONArray("arr");
+            for (int i = 0; i < arr.length(); i++) {
+                obj = arr.getJSONObject(i);
+                commentItem = new Comment();
+                commentItem.setName(obj.getString("Id"));
+                commentItem.setDate(obj.getString("Date"));
+                commentItem.setComment(obj.getString("Comment"));
+                commentList.add(commentItem);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
         return commentList;
     }

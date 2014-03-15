@@ -22,6 +22,7 @@ import java.util.Calendar;
  */
 public class CommentListActivity extends Activity {
     private Activity activity;
+    private ListView lv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class CommentListActivity extends Activity {
 
         ArrayList<Comment> commentList = (ArrayList<Comment>) getIntent().getSerializableExtra("CommentList");
 
-        ListView lv = (ListView) findViewById(R.id.comment_list);
+        lv = (ListView) findViewById(R.id.comment_list);
         CommentListViewAdapter adapter = new CommentListViewAdapter(this, commentList);
         lv.setAdapter(adapter);
 
@@ -44,7 +45,7 @@ public class CommentListActivity extends Activity {
                 EditText input = (EditText) findViewById(R.id.input);
                 String txt = String.valueOf(input.getText());
                 if (!txt.isEmpty()) {
-                    UploadComment uc = new UploadComment(activity);
+                    UploadComment uc = new UploadComment(activity, lv);
                     SimpleDateFormat sf = new SimpleDateFormat("dd-mm-yyyy hh:mm:ss");
                     String dat = sf.format(Calendar.getInstance().getTime());
                     GPSTracker gps = new GPSTracker(activity);

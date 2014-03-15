@@ -1,6 +1,7 @@
 package com.example.cloudlibrary.activities;
 
 import java.io.File;
+import java.io.FileOutputStream;
 
 import com.example.cloudlibrary.helpers.ServiceAddresses;
 import com.example.cloudlibrary.model.Book;
@@ -53,14 +54,39 @@ public class BookInfoActivity extends Activity {
 		switch (v.getId()) {
 		case R.id.download:
 			downloadBook();
-			Toast.makeText(this, "download", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.qrCode:
-			generateCRCode();
+			Bitmap img = getQRCodeImage();
+			createImagefileAndSave(img);
 			break;
 		default:
 			break;
 		}
+	}
+
+	private void createImagefileAndSave(Bitmap img) {
+		File myFolder = new File(Environment.getExternalStorageDirectory() + "/CloudLibrary/QRCodes");
+		if (!myFolder.exists()) {
+			myFolder.mkdirs();
+		}
+		String url = b.getDownloadUrl();
+		String fileName = url.substring(url.lastIndexOf('/') + 1, url.length());
+		String fileNameWithoutExtn = fileName.substring(0, fileName.lastIndexOf('.'));
+		File imgFile = new File(Environment.getExternalStorageDirectory() + "/CloudLibrary/QRCodes/" +  fileNameWithoutExtn + ".png");
+		FileOutputStream out = null;
+		try {
+			out = new FileOutputStream(imgFile);
+			img.compress(Bitmap.CompressFormat.PNG, 90, out);
+			Toast.makeText(this, "Saved", Toast.LENGTH_LONG).show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				out.close();
+			} catch (Throwable ignore) {
+			}
+		}
+
 	}
 
 	BroadcastReceiver onComplete = new BroadcastReceiver() {
@@ -79,7 +105,6 @@ public class BookInfoActivity extends Activity {
 	}
 
 	private void downloadBook() {
-		// progress = ProgressDialog.show(this, "title", "msg");
 		String servicestring = Context.DOWNLOAD_SERVICE;
 		downloadmanager = (DownloadManager) getSystemService(servicestring);
 		String url = b.getDownloadUrl();
@@ -87,15 +112,22 @@ public class BookInfoActivity extends Activity {
 		DownloadManager.Request request = new Request(uri);
 		String fileName = url.substring(url.lastIndexOf('/') + 1, url.length());
 
-		reference = downloadmanager.enqueue(request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE)
+		
+		File myFolder = new File(Environment.getExternalStorageDirectory() + "/CloudLibrary/Books");
+
+		if (!myFolder.exists()) {
+			myFolder.mkdirs();
+		}
+		reference = downloadmanager.enqueue(request.setAllowedNetworkTypes(
+				DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE)
 				.setAllowedOverRoaming(false).setTitle(fileName)
 				.setDescription("File Download")
-				.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName));
+				.setDestinationInExternalPublicDir("CloudLibrary/Books", fileName));
 		registerReceiver(onComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
 	}
 
-	private void generateCRCode() {
+	private Bitmap getQRCodeImage() {
 		// Find screen size
 		WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
 		Display display = manager.getDefaultDisplay();
@@ -111,10 +143,13 @@ public class BookInfoActivity extends Activity {
 		try {
 			Bitmap bitmap = qrCodeEncoder.encodeAsBitmap();
 			ImageView myImage = (ImageView) findViewById(R.id.imageView1);
+
 			myImage.setImageBitmap(bitmap);
+			return bitmap;
 
 		} catch (WriterException e) {
 			e.printStackTrace();
 		}
+		return null;
 	}
 }

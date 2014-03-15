@@ -6,10 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.model.Comment;
-
 import java.util.ArrayList;
 
 /**
@@ -22,6 +20,11 @@ public class CommentListViewAdapter extends BaseAdapter {
     public CommentListViewAdapter(Context ctx, ArrayList<Comment> commentList){
         this.ctx = ctx;
         this.commentList = commentList;
+    }
+
+    public void setNewValues(ArrayList<Comment> commentList){
+        this.commentList = commentList;
+        notifyDataSetChanged();
     }
 
     @Override

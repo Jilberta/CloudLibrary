@@ -10,7 +10,6 @@ public class GenerateCommentJson {
 
     public static JSONObject makeJson(String userId, String comment, String date, double longitude, double latitude){
         JSONObject res = new JSONObject();
-
         try {
             res.put("UserId", userId);
             res.put("Comment", comment);

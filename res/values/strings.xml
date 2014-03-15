@@ -7,4 +7,10 @@
     <string name="app_id">274490569392551</string>
     <string name="share">Share</string>
 
+    <string name="please_wait">გთხოვთ დაიცადოთ</string>
+
+    <string name="review">მოკლე მიმოხილვა</string>
+    <string name="download">გადმოწერა</string>
+    <string name="qr_code">QR კოდი</string>
+
 </resources>

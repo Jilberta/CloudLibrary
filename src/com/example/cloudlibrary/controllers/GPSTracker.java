@@ -11,12 +11,13 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
-import android.widget.Toast;
+
+import java.io.Serializable;
 
 /**
  * Created by Jay on 3/14/14.
  */
-public class GPSTracker extends Service implements LocationListener {
+public class GPSTracker extends Service implements LocationListener, Serializable {
     private final Context ctx;
     boolean isGPSEnabled = false;
     boolean isNetworkEnabled = false;
@@ -27,7 +28,6 @@ public class GPSTracker extends Service implements LocationListener {
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
     private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1;
     protected LocationManager locationManager;
-
 
     public GPSTracker(Context ctx) {
         this.ctx = ctx;
@@ -135,7 +135,7 @@ public class GPSTracker extends Service implements LocationListener {
     @Override
     public void onLocationChanged(Location location) {
         this.location = location;
-        Toast.makeText(ctx, "Update is Done: \nLongitude: " + getLongitude() + "\nLatitude: " + getLatitude(), Toast.LENGTH_LONG).show();
+//        Toast.makeText(ctx, "Update is Done: \nLongitude: " + getLongitude() + "\nLatitude: " + getLatitude(), Toast.LENGTH_LONG).show();
     }
 
     @Override

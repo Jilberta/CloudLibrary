@@ -1,5 +1,6 @@
 package com.example.cloudlibrary.activities;
 
+import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.activities.R;
+import com.example.cloudlibrary.helpers.GlobalConst;
 import com.example.cloudlibrary.net.SyncBookList;
 import com.example.cloudlibrary.net.SyncCommentList;
 import com.facebook.Request;
@@ -36,11 +38,17 @@ public class MainActivity extends FragmentActivity {
 	private MainFragment mainFragment;
 
 	private SharedPreferences prefs;
+
+    private ProgressDialog progress;
+
+    private GPSTracker gps;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+        gps = new GPSTracker(this);
 		
 		prefs = getSharedPreferences("pref", 0);
 
@@ -115,57 +123,31 @@ public class MainActivity extends FragmentActivity {
 	private String userName = null;
 	
 	public void onClick(View v) {
-		// Intent k;
 		switch (v.getId()) {
 		case R.id.books:
-			GPSTracker gps = new GPSTracker(this);
+            progress = ProgressDialog.show(this, "", getString(R.string.please_wait));
+//			GPSTracker gps = new GPSTracker(this);
 			if (gps.canGetLocation()) {
 				double latitude = gps.getLatitude();
 				double longitude = gps.getLongitude();
-				// Toast.makeText(this, "Your Location is: \nLatitude: " +
-				// latitude + "\nLongitude: " + longitude,
-				// Toast.LENGTH_LONG).show();
-
-				Geocoder gc = new Geocoder(this, new Locale("en"));
-				try {
-					ArrayList<Address> list = (ArrayList<Address>) gc
-							.getFromLocation(longitude, latitude, 5);
-					for (int i = 0; i < list.size(); i++) {
-						Address addr = list.get(i);
-						System.out.println("ASd");
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-
-				SyncBookList sync = new SyncBookList(this);
+				SyncBookList sync = new SyncBookList(this, progress);
 				sync.makeRequest(longitude, latitude);
 			} else {
 				gps.showSettingsAlert();
 			}
 			break;
 		case R.id.comments:
-			// Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
-			// k = new Intent(MainActivity.this, CommentsActivity.class);
-			// startActivity(k);
-			GPSTracker gps2 = new GPSTracker(this);
-			if (gps2.canGetLocation()) {
-				double latitude = gps2.getLatitude();
-				double longitude = gps2.getLongitude();
-				// Toast.makeText(this, "Your Location is: \nLatitude: " +
-				// latitude + "\nLongitude: " + longitude,
-				// Toast.LENGTH_LONG).show();
-
-				SyncCommentList syncComment = new SyncCommentList(this);
+            progress = ProgressDialog.show(this, "", getString(R.string.please_wait));
+//			GPSTracker gps2 = new GPSTracker(this);
+			if (gps.canGetLocation()) {
+				double latitude = gps.getLatitude();
+				double longitude = gps.getLongitude();
+				SyncCommentList syncComment = new SyncCommentList(this, progress);
 				syncComment.makeRequest(longitude, latitude);
 			} else {
-				gps2.showSettingsAlert();
+				gps.showSettingsAlert();
 			}
-
 			break;
-		// case R.id.test:
-		//
-		// break;
 		default:
 			break;
 		}
@@ -177,5 +159,4 @@ public class MainActivity extends FragmentActivity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
 }

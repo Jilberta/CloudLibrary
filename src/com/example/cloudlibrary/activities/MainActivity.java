@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.R;
 import com.example.cloudlibrary.net.SyncBookList;
+import com.example.cloudlibrary.net.SyncCommentList;
 
 public class MainActivity extends Activity {
 
@@ -37,9 +38,21 @@ public class MainActivity extends Activity {
                 }
                 break;
             case R.id.comments:
-                Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
+//                Toast.makeText(this, "comments", Toast.LENGTH_LONG).show();
                 //k = new Intent(MainActivity.this, CommentsActivity.class);
                 //startActivity(k);
+                GPSTracker gps2 = new GPSTracker(this);
+                if (gps2.canGetLocation()) {
+                    double latitude = gps2.getLatitude();
+                    double longitude = gps2.getLongitude();
+//                    Toast.makeText(this, "Your Location is: \nLatitude: " + latitude + "\nLongitude: " + longitude, Toast.LENGTH_LONG).show();
+
+                    SyncCommentList syncComment = new SyncCommentList(this);
+                    syncComment.makeRequest(longitude, latitude);
+                }else{
+                    gps2.showSettingsAlert();
+                }
+
                 break;
             case R.id.test:
 

@@ -2,8 +2,13 @@ package com.example.cloudlibrary.net;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.widget.Toast;
 
+import com.example.cloudlibrary.activities.CommentListActivity;
 import com.example.cloudlibrary.helpers.ServiceAddresses;
+import com.example.cloudlibrary.model.Comment;
+import com.example.cloudlibrary.parsers.CommentListParser;
 import com.example.cloudlibrary.volley.RequestQueue;
 import com.example.cloudlibrary.volley.Response;
 import com.example.cloudlibrary.volley.VolleyError;
@@ -36,11 +41,11 @@ public class SyncCommentList {
             @Override
             public void onResponse(JSONArray response) {
                 progress.dismiss();
-//                ArrayList<Comment> commentList;
-//                Intent k = new Intent(ctx, C.class);
-//                k.putExtra("CommentList", commentList);
-//                ctx.startActivity(k);
-//                Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
+                ArrayList<Comment> commentList = CommentListParser.getCommentListFromResponse(response);
+                Intent k = new Intent(ctx, CommentListActivity.class);
+                k.putExtra("CommentList", commentList);
+                ctx.startActivity(k);
+                Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override

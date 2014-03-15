@@ -1,10 +1,13 @@
 package com.example.cloudlibrary.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Jay on 3/15/14.
  */
-public class Comment {
+public class Comment implements Serializable {
     private String name, date, comment;
+    private static final long serialVersionUID = 1L;
 
     public Comment(){
     }

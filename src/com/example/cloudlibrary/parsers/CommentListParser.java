@@ -21,7 +21,7 @@ public class CommentListParser {
             try {
                 obj = response.getJSONObject(i);
                 commentItem = new Comment();
-                commentItem.setName(obj.getString("Name"));
+                commentItem.setName(obj.getString("Id"));
                 commentItem.setDate(obj.getString("Date"));
                 commentItem.setComment(obj.getString("Comment"));
                 commentList.add(commentItem);

@@ -97,9 +97,9 @@ public class MainActivity extends Activity {
                 }
 
                 break;
-            case R.id.test:
-
-                break;
+//            case R.id.test:
+//
+//                break;
             default:
                 break;
         }

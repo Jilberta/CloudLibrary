@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.widget.Toast;
 
 import com.example.cloudlibrary.activities.BooksListActivity;
+import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.helpers.ServiceAddresses;
 import com.example.cloudlibrary.model.Book;
 import com.example.cloudlibrary.parsers.BookListParser;

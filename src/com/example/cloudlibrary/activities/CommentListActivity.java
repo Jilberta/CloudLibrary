@@ -1,7 +1,11 @@
 package com.example.cloudlibrary.activities;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,6 +13,8 @@ import android.widget.ListView;
 import com.example.cloudlibrary.adapters.CommentListViewAdapter;
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.model.Comment;
+import com.example.cloudlibrary.net.SyncBookListUpdate;
+import com.example.cloudlibrary.net.SyncCommentListUpdate;
 import com.example.cloudlibrary.net.UploadComment;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -59,5 +65,31 @@ public class CommentListActivity extends Activity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.other_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.refresh:
+                GPSTracker gps = new GPSTracker(this);
+                double longitude = 0, latitude = 0;
+                if (gps.canGetLocation()) {
+                    ProgressDialog progress = ProgressDialog.show(this, "", getString(R.string.please_wait));
+                    SyncCommentListUpdate sync = new SyncCommentListUpdate(this, progress, lv);
+                    longitude = gps.getLongitude();
+                    latitude = gps.getLatitude();
+                    sync.makeRequest(longitude, latitude);
+                } else {
+                    gps.showSettingsAlert();
+                }
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
 }

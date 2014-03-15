@@ -11,14 +11,13 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
-import android.widget.Toast;
 
-import com.example.cloudlibrary.helpers.GlobalConst;
+import java.io.Serializable;
 
 /**
  * Created by Jay on 3/14/14.
  */
-public class GPSTracker extends Service implements LocationListener {
+public class GPSTracker extends Service implements LocationListener, Serializable {
     private final Context ctx;
     boolean isGPSEnabled = false;
     boolean isNetworkEnabled = false;
@@ -29,12 +28,9 @@ public class GPSTracker extends Service implements LocationListener {
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
     private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1;
     protected LocationManager locationManager;
-    private int currentPageType;
 
-
-    public GPSTracker(Context ctx, int currentPageType) {
+    public GPSTracker(Context ctx) {
         this.ctx = ctx;
-        this.currentPageType = currentPageType;
         getLocation();
     }
 

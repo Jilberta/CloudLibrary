@@ -3,8 +3,6 @@ package com.example.cloudlibrary.net;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.widget.Toast;
-
 import com.example.cloudlibrary.activities.CommentListActivity;
 import com.example.cloudlibrary.helpers.ServiceAddresses;
 import com.example.cloudlibrary.model.Comment;
@@ -14,12 +12,10 @@ import com.example.cloudlibrary.volley.Response;
 import com.example.cloudlibrary.volley.VolleyError;
 import com.example.cloudlibrary.volley.toolbox.JsonArrayRequest;
 import com.example.cloudlibrary.volley.toolbox.Volley;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
-
 import java.util.ArrayList;
 
 /**

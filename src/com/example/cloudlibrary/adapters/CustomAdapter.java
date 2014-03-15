@@ -1,10 +1,8 @@
 package com.example.cloudlibrary.adapters;
 
 import java.util.ArrayList;
-
 import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.model.Book;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +11,19 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 public class CustomAdapter extends ArrayAdapter<Book> {
-	private final Context context;
-	private final ArrayList<Book> values;
+	private Context context;
+	private ArrayList<Book> values;
 
 	public CustomAdapter(Context context, ArrayList<Book> books) {
 		super(context, R.layout.list_item, books);
 		this.context = context;
 		this.values = books;
 	}
+
+    public void setNewValues(ArrayList<Book> bookList){
+        this.values = bookList;
+        notifyDataSetChanged();
+    }
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {

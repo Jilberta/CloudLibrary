@@ -104,36 +104,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="58" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="54" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -183,10 +153,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookInfoActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BookInfoActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.3939394" vertical-offset="867" max-vertical-offset="2431">
+            <state line="55" column="69" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="2295">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,11 +164,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_book_info.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ImageLoader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/volley/toolbox/ImageLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="26" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="7582">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_book_info.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_book_info.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="50" selection-start="650" selection-end="650" vertical-scroll-proportion="-8.52" vertical-offset="76" max-vertical-offset="1479">
-              <folding />
+            <state line="17" column="53" selection-start="723" selection-end="723" vertical-scroll-proportion="0.715942" vertical-offset="42" max-vertical-offset="1479">
+              <folding>
+                <element signature="e#1888#1906#0" expanded="true" />
+                <element signature="e#2166#2183#0" expanded="true" />
+                <element signature="e#2492#2508#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -238,8 +221,8 @@
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/CommentListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_book_info.xml" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_book_info.xml" />
       </list>
     </option>
   </component>
@@ -298,6 +281,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudlibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="volley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudlibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="volley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toolbox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -754,8 +785,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23257698" sideWeight="0.5144804" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23257698" sideWeight="0.6746167" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -851,15 +882,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/parsers/CommentListParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="50" selection-end="50" vertical-scroll-proportion="0.060606062" vertical-offset="0" max-vertical-offset="935">
-          <folding>
-            <element signature="e#1151#1160#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/controllers/GPSTracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="82" selection-start="565" selection-end="565" vertical-scroll-proportion="0.5777778" vertical-offset="141" max-vertical-offset="2754">
@@ -972,16 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_book_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="650" selection-end="650" vertical-scroll-proportion="-8.52" vertical-offset="76" max-vertical-offset="1479">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
@@ -996,13 +1008,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/volley/toolbox/ImageLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="7582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.3939394" vertical-offset="867" max-vertical-offset="2431">
+        <state line="55" column="69" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="2295">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_book_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="53" selection-start="723" selection-end="723" vertical-scroll-proportion="0.715942" vertical-offset="42" max-vertical-offset="1479">
+          <folding>
+            <element signature="e#1888#1906#0" expanded="true" />
+            <element signature="e#2166#2183#0" expanded="true" />
+            <element signature="e#2492#2508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

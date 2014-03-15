@@ -1,7 +1,10 @@
-package com.example.cloudlibrary;
+package com.example.cloudlibrary.activities;
 
 
 import java.util.ArrayList;
+
+import com.example.cloudlibrary.adapters.CustomAdapter;
+import com.example.cloudlibrary.R;
 import com.example.cloudlibrary.model.Book;
 import android.app.Activity;
 import android.content.Intent;

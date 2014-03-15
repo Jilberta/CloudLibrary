@@ -1,4 +1,4 @@
-package com.example.cloudlibrary;
+package com.example.cloudlibrary.activities;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.cloudlibrary.controllers.GPSTracker;
+import com.example.cloudlibrary.R;
 import com.example.cloudlibrary.net.SyncBookList;
 
 public class MainActivity extends Activity {

@@ -3,6 +3,7 @@ package com.example.cloudlibrary.net;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.widget.Toast;
 
 import com.example.cloudlibrary.activities.BooksListActivity;
@@ -13,6 +14,7 @@ import com.example.cloudlibrary.parsers.BookListParser;
 import com.example.cloudlibrary.volley.RequestQueue;
 import com.example.cloudlibrary.volley.Response;
 import com.example.cloudlibrary.volley.VolleyError;
+import com.example.cloudlibrary.volley.toolbox.ImageRequest;
 import com.example.cloudlibrary.volley.toolbox.JsonArrayRequest;
 import com.example.cloudlibrary.volley.toolbox.Volley;
 

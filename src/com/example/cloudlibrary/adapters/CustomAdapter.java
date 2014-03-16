@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CustomAdapter extends ArrayAdapter<Book> {
@@ -30,11 +31,16 @@ public class CustomAdapter extends ArrayAdapter<Book> {
 		LayoutInflater inflater = (LayoutInflater) context
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.list_item, parent, false);
-		
+
 		TextView textViewTitle = (TextView) rowView.findViewById(R.id.title);
 		textViewTitle.setText(values.get(position).getTitle());
 		TextView textViewAuthor = (TextView) rowView.findViewById(R.id.author);
 		textViewAuthor.setText(values.get(position).getAuthorInfo());
+
+        ImageView img = (ImageView) rowView.findViewById(R.id.img);
+        Book book = values.get(position);
+        if(book.getBitmap() != null)
+            img.setImageBitmap(book.getBitmap());
 		
 		return rowView;
 	}

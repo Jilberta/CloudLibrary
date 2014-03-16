@@ -1,5 +1,7 @@
 package com.example.cloudlibrary.model;
 
+import android.graphics.Bitmap;
+
 import java.io.Serializable;
 
 public class Book implements Serializable{
@@ -8,18 +10,28 @@ public class Book implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	private String authorInfo, briefDescription, title, downloadUrl, imageUrl;
+    private Bitmap bitmap;
 
 	public Book(String authorInfo, String briefDescription, String title,
-			String downloadUrl, String imageUrl) {
+			String downloadUrl, String imageUrl, Bitmap bitmap) {
 		this.authorInfo = authorInfo;
 		this.briefDescription = briefDescription;
 		this.title = title;
 		this.downloadUrl = downloadUrl;
 		this.imageUrl = imageUrl;
+        this.bitmap = bitmap;
 	}
 
 	public Book() {
 	}
+
+    public void setBitmap(Bitmap bitmap){
+        this.bitmap = bitmap;
+    }
+
+    public Bitmap getBitmap(){
+        return this.bitmap;
+    }
 
 	public void setAuthorInfo(String authorInfo) {
 		this.authorInfo = authorInfo;

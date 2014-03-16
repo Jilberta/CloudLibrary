@@ -2,6 +2,7 @@ package com.example.cloudlibrary.net;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.widget.ListView;
 import com.example.cloudlibrary.adapters.CustomAdapter;
 import com.example.cloudlibrary.helpers.ServiceAddresses;
@@ -10,6 +11,7 @@ import com.example.cloudlibrary.parsers.BookListParser;
 import com.example.cloudlibrary.volley.RequestQueue;
 import com.example.cloudlibrary.volley.Response;
 import com.example.cloudlibrary.volley.VolleyError;
+import com.example.cloudlibrary.volley.toolbox.ImageRequest;
 import com.example.cloudlibrary.volley.toolbox.JsonArrayRequest;
 import com.example.cloudlibrary.volley.toolbox.Volley;
 import org.apache.http.NameValuePair;
@@ -43,6 +45,14 @@ public class SyncBookListUpdate {
                         progress.dismiss();
                         ArrayList<Book> bookList = BookListParser.getBookListFromResponse(response);
                         CustomAdapter adapt = (CustomAdapter) lv.getAdapter();
+                        for(int i = 0; i < bookList.size(); i++){
+                            Book book = bookList.get(i);
+                            String k = ServiceAddresses.IP + book.getImageUrl();
+                            RequestQueue queue = Volley.newRequestQueue(ctx);
+                            Resp rsp = new Resp(book, adapt);
+                            ImageRequest request = new ImageRequest(k, rsp, 0, 0, null, null);
+                            queue.add(request);
+                        }
                         adapt.setNewValues(bookList);
                     }
                 }, new Response.ErrorListener() {
@@ -53,6 +63,22 @@ public class SyncBookListUpdate {
                 }
         );
         queue.add(arrayRequest);
+    }
+
+    private class Resp implements Response.Listener<Bitmap>{
+        private Book book;
+        private CustomAdapter adapter;
+
+        public Resp(Book book, CustomAdapter adapter){
+            this.book = book;
+            this.adapter = adapter;
+        }
+
+        @Override
+        public void onResponse(Bitmap response) {
+            book.setBitmap(response);
+            adapter.notifyDataSetChanged();
+        }
     }
 
     private String generateUrl(double longitude, double latitude) {

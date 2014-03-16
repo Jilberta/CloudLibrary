@@ -149,6 +149,186 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="70" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="71" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="72" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="73" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="75" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="76" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="77" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="79" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="80" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="81" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="87" class="com.example.cloudlibrary.activities.BookInfoActivity" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" line="84" class="com.example.cloudlibrary.activities.BookInfoActivity$1" package="com.example.cloudlibrary.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -159,19 +339,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="30" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="3768" selection-end="3768" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2856">
+            <state line="133" column="29" selection-start="3958" selection-end="3958" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2856">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2481#3347#0" expanded="true" />
@@ -187,12 +358,72 @@
       <file leaf-file-name="SyncBookList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="108" selection-start="2309" selection-end="2645" vertical-scroll-proportion="0.0" vertical-offset="922" max-vertical-offset="1292">
+            <state line="58" column="9" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1937#2110#0" expanded="true" />
-                <element signature="e#2099#2100#0" expanded="true" />
-                <element signature="e#2354#2369#0" expanded="true" />
+                <element signature="e#2030#2203#0" expanded="true" />
+                <element signature="e#2192#2193#0" expanded="true" />
+                <element signature="e#2447#2462#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BooksListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BooksListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="78" selection-start="2233" selection-end="2233" vertical-scroll-proportion="0.0" vertical-offset="803" max-vertical-offset="1938">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1440#1890#0" expanded="true" />
+                <element signature="e#1885#1886#0" expanded="true" />
+                <element signature="e#3254#3285#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SyncBookListUpdate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookListUpdate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="94" selection-start="2302" selection-end="2302" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1530">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3285#3300#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/adapters/CustomAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="75" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="850">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="35" selection-start="705" selection-end="705" vertical-scroll-proportion="-12.24" vertical-offset="0" max-vertical-offset="459">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/model/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="29" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1377">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,33 +432,26 @@
       <file leaf-file-name="BookInfoActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="44" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="3196">
+            <state line="56" column="13" selection-start="2019" selection-end="2019" vertical-scroll-proportion="0.0" vertical-offset="1304" max-vertical-offset="3689">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4303#4560#0" expanded="true" />
-                <element signature="e#4553#4554#0" expanded="true" />
+                <element signature="e#2992#3177#0" expanded="true" />
+                <element signature="e#3166#3167#0" expanded="true" />
+                <element signature="e#5398#5655#0" expanded="true" />
+                <element signature="e#5648#5649#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageLoader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/volley/toolbox/ImageLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="26" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="7582">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_book_info.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_book_info.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_book_info.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="56" selection-start="4918" selection-end="4918" vertical-scroll-proportion="-12.44" vertical-offset="1678" max-vertical-offset="2227">
+            <state line="26" column="55" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.3942029" vertical-offset="306" max-vertical-offset="2227">
               <folding>
-                <element signature="e#3230#3246#0" expanded="true" />
-                <element signature="e#4384#4402#0" expanded="true" />
-                <element signature="e#4728#4745#0" expanded="true" />
+                <element signature="e#3387#3403#0" expanded="true" />
+                <element signature="e#4541#4559#0" expanded="true" />
+                <element signature="e#4885#4902#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,10 +460,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SyncGeoCoder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SyncGeoCoder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncGeoCoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.33333334" vertical-offset="577" max-vertical-offset="1037">
+            <state line="32" column="63" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1037">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1230#1447#0" expanded="true" />
@@ -247,15 +471,6 @@
                 <element signature="e#1449#1654#0" expanded="true" />
                 <element signature="e#1643#1644#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceAddresses.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/helpers/ServiceAddresses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="110" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="374">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -278,22 +493,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/adapters/CustomAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncCommentList.java" />
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/test.java" />
         <option value="$PROJECT_DIR$/res/menu/other_menu.xml" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/controllers/GPSTracker.java" />
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookList.java" />
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookListUpdate.java" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncCommentListUpdate.java" />
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BooksListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/CommentListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_book_info.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncGeoCoder.java" />
         <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/helpers/ServiceAddresses.java" />
+        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookList.java" />
+        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/adapters/CustomAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/model/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookListUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BooksListActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_book_info.xml" />
       </list>
     </option>
   </component>
@@ -355,6 +570,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -383,9 +648,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jay\Desktop\CloudLibrary\res\drawable-hdpi" />
       <recent name="C:\Users\Jay\Desktop\CloudLibrary\res\drawable-xhdpi" />
       <recent name="C:\Users\Jay\Desktop\CloudLibrary\res\drawable-mdpi" />
-      <recent name="C:\Users\Jay\Desktop\CloudLibrary\res\drawable-hdpi" />
       <recent name="C:\Users\Jay\Desktop\CloudLibrary\src\com\example\cloudlibrary\volley" />
       <recent name="C:\Users\Jay\Desktop\CloudLibrary\src\com\example\cloudlibrary" />
     </key>
@@ -548,7 +813,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -556,7 +821,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40715504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40715504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40715504" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -568,8 +833,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23257698" sideWeight="0.59284496" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23257698" sideWeight="0.6746167" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -580,12 +845,12 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40715504" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23257698" sideWeight="0.5144804" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23257698" sideWeight="0.59284496" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -665,70 +930,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncCommentListUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1862" selection-end="1862" vertical-scroll-proportion="1.0918919" vertical-offset="395" max-vertical-offset="1173">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2343#2358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/UploadComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="33" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1671#2150#0" expanded="true" />
-            <element signature="e#2131#2132#0" expanded="true" />
-            <element signature="e#2152#2357#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BooksListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="107" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.44864866" vertical-offset="786" max-vertical-offset="1309">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2098#2129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/CommentListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="107" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.035135135" vertical-offset="1296" max-vertical-offset="1666">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3054#3085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/MainFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="907" selection-end="907" vertical-scroll-proportion="-6.156757" vertical-offset="2346" max-vertical-offset="2992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="3768" selection-end="3768" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2856">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2481#3347#0" expanded="true" />
-            <element signature="e#2732#3304#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3341#3342#0" expanded="true" />
-            <element signature="e#4115#4146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="30" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
@@ -750,55 +951,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/volley/toolbox/ImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="26" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="7582">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/volley/toolbox/ImageRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="13" selection-start="1216" selection-end="1216" vertical-scroll-proportion="-1.4594594" vertical-offset="863" max-vertical-offset="3451">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="108" selection-start="2309" selection-end="2645" vertical-scroll-proportion="0.0" vertical-offset="922" max-vertical-offset="1292">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1937#2110#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-            <element signature="e#2354#2369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_book_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="56" selection-start="4918" selection-end="4918" vertical-scroll-proportion="-12.44" vertical-offset="1678" max-vertical-offset="2227">
-          <folding>
-            <element signature="e#3230#3246#0" expanded="true" />
-            <element signature="e#4384#4402#0" expanded="true" />
-            <element signature="e#4728#4745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="44" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="3196">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4303#4560#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -812,7 +969,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncGeoCoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.33333334" vertical-offset="577" max-vertical-offset="1037">
+        <state line="32" column="63" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1037">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1230#1447#0" expanded="true" />
@@ -821,6 +978,116 @@
             <element signature="e#1643#1644#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/volley/toolbox/ImageLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-1.4361314" vertical-offset="1025" max-vertical-offset="7582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="29" selection-start="3958" selection-end="3958" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2856">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2481#3347#0" expanded="true" />
+            <element signature="e#2732#3304#0" expanded="true" />
+            <element signature="e#3292#3293#0" expanded="true" />
+            <element signature="e#3341#3342#0" expanded="true" />
+            <element signature="e#4115#4146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/adapters/CustomAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="75" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="850">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="705" selection-end="705" vertical-scroll-proportion="-12.24" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BookInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="2019" selection-end="2019" vertical-scroll-proportion="0.0" vertical-offset="1304" max-vertical-offset="3689">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2992#3177#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#5398#5655#0" expanded="true" />
+            <element signature="e#5648#5649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="1377">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="9" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0" vertical-offset="803" max-vertical-offset="1326">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2030#2203#0" expanded="true" />
+            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="e#2447#2462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/activities/BooksListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="78" selection-start="2233" selection-end="2233" vertical-scroll-proportion="0.0" vertical-offset="803" max-vertical-offset="1938">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1440#1890#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+            <element signature="e#3254#3285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/cloudlibrary/net/SyncBookListUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="94" selection-start="2302" selection-end="2302" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1530">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3285#3300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_book_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="55" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.3942029" vertical-offset="306" max-vertical-offset="2227">
+          <folding>
+            <element signature="e#3387#3403#0" expanded="true" />
+            <element signature="e#4541#4559#0" expanded="true" />
+            <element signature="e#4885#4902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

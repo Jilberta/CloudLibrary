@@ -24,7 +24,7 @@
                         android:layout_height="fill_parent"
                         android:layout_marginRight="6dip"
                         android:layout_weight="0.6"
-                        android:src="@drawable/ic_launcher"/>
+                        android:src="@drawable/no_image"/>
 
                 <LinearLayout
                         android:layout_width="0dp"
@@ -47,24 +47,24 @@
                 </LinearLayout>
 
                 <!--<LinearLayout-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="0.2"-->
-                <!--android:orientation="vertical">-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:orientation="vertical">-->
 
-                <!--<Button-->
-                <!--android:id="@+id/download"-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:onClick="onClick"-->
-                <!--android:text="@string/download"/>-->
+                    <!--<Button-->
+                            <!--android:id="@+id/download"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:onClick="onClick"-->
+                            <!--android:text="@string/download"/>-->
 
-                <!--<Button-->
-                <!--android:id="@+id/qrCode"-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:onClick="onClick"-->
-                <!--android:text="@string/qr_code"/>-->
+                    <!--<Button-->
+                            <!--android:id="@+id/qrCode"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:onClick="onClick"-->
+                            <!--android:text="@string/qr_code"/>-->
                 <!--</LinearLayout>-->
             </LinearLayout>
 
@@ -113,12 +113,12 @@
                         android:text="@string/qr_code"/>
 
                 <Button
-                    android:id="@+id/tst"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="onClick"
-                    android:text="Test"/>
+                        android:id="@+id/tst"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="Test"/>
             </LinearLayout>
 
         </LinearLayout>

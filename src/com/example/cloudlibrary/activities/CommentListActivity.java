@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,12 +16,26 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.cloudlibrary.adapters.CommentListViewAdapter;
+import com.example.cloudlibrary.adapters.CustomAdapter;
 import com.example.cloudlibrary.controllers.GPSTracker;
 import com.example.cloudlibrary.helpers.HelperMethods;
+import com.example.cloudlibrary.helpers.ServiceAddresses;
+import com.example.cloudlibrary.model.Book;
 import com.example.cloudlibrary.model.Comment;
 import com.example.cloudlibrary.net.SyncBookListUpdate;
 import com.example.cloudlibrary.net.SyncCommentListUpdate;
 import com.example.cloudlibrary.net.UploadComment;
+import com.example.cloudlibrary.volley.Request;
+import com.example.cloudlibrary.volley.RequestQueue;
+import com.example.cloudlibrary.volley.Response;
+import com.example.cloudlibrary.volley.VolleyError;
+import com.example.cloudlibrary.volley.toolbox.ImageRequest;
+import com.example.cloudlibrary.volley.toolbox.JsonObjectRequest;
+import com.example.cloudlibrary.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -47,8 +62,38 @@ public class CommentListActivity extends Activity {
         CommentListViewAdapter adapter = new CommentListViewAdapter(this, commentList);
         lv.setAdapter(adapter);
 
-        Button upload = (Button) findViewById(R.id.upload);
+        for(int i = 0; i < commentList.size(); i++){
+            Comment comment = commentList.get(i);
+            String userId = comment.getId();
+            String url = ServiceAddresses.FACEBOOK_URL + comment.getId();
+            RequestQueue queue = Volley.newRequestQueue(this);
+            Resp2 rsp = new Resp2(comment, adapter);
+            JsonObjectRequest req = new JsonObjectRequest(Request.Method.GET, url, null, rsp, new Response.ErrorListener(){
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    System.out.println();
+                }
+            });
+            queue.add(req);
+        }
 
+
+        for(int i = 0; i < commentList.size(); i++){
+            Comment comment = commentList.get(i);
+            String k = HelperMethods.getUserProfilePictureUrl(comment.getId());
+            RequestQueue queue = Volley.newRequestQueue(this);
+            Resp rsp = new Resp(comment, adapter);
+            ImageRequest request = new ImageRequest(k, rsp, 0, 0, null, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    System.out.println("ASd");
+                }
+            });
+            queue.add(request);
+        }
+
+
+        Button upload = (Button) findViewById(R.id.upload);
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +115,45 @@ public class CommentListActivity extends Activity {
                 }
             }
         });
+    }
+
+    private class Resp implements Response.Listener<Bitmap>{
+        private Comment comment;
+        private CommentListViewAdapter adapter;
+
+        public Resp(Comment comment, CommentListViewAdapter adapter){
+            this.comment = comment;
+            this.adapter = adapter;
+        }
+
+        @Override
+        public void onResponse(Bitmap response) {
+            comment.setBitmap(response);
+            adapter.notifyDataSetChanged();
+        }
+    }
+
+    private class Resp2 implements Response.Listener<JSONObject>{
+        private Comment comment;
+        private CommentListViewAdapter adapter;
+
+        public Resp2(Comment comment, CommentListViewAdapter adapter){
+            this.comment = comment;
+            this.adapter = adapter;
+        }
+
+        @Override
+        public void onResponse(JSONObject response) {
+            try {
+                String name = response.getString("name");
+                String imageUrl = HelperMethods.getUserProfilePictureUrl(comment.getId());
+                comment.setName(name);
+                comment.setImageUrl(imageUrl);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            adapter.notifyDataSetChanged();
+        }
     }
 
     private void updateProfileInfo(Context ctx){

@@ -13,4 +13,6 @@ public class ServiceAddresses {
 
 
     public static final String GOOGLE_GEOCODER_URL = "http://maps.googleapis.com/maps/api/geocode/json?latlng=";
+
+    public static final String FACEBOOK_URL = "http://graph.facebook.com/";
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.cloudlibrary.activities.R;
 import com.example.cloudlibrary.model.Comment;
@@ -58,6 +59,10 @@ public class CommentListViewAdapter extends BaseAdapter {
 
         TextView commentView = (TextView) rowView.findViewById(R.id.comment);
         commentView.setText(item.getComment());
+
+        ImageView img = (ImageView)rowView.findViewById(R.id.pic);
+        if(item.getBitmap() != null)
+            img.setImageBitmap(item.getBitmap());
 
         return rowView;
     }

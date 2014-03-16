@@ -3,15 +3,25 @@ package com.example.cloudlibrary.activities;
 import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.cloudlibrary.adapters.CommentListViewAdapter;
 import com.example.cloudlibrary.controllers.GPSTracker;
+import com.example.cloudlibrary.helpers.HelperMethods;
+import com.example.cloudlibrary.helpers.ServiceAddresses;
+import com.example.cloudlibrary.model.Comment;
 import com.example.cloudlibrary.net.SyncBookList;
 import com.example.cloudlibrary.net.SyncCommentList;
+import com.example.cloudlibrary.volley.RequestQueue;
+import com.example.cloudlibrary.volley.VolleyError;
+import com.example.cloudlibrary.volley.toolbox.ImageRequest;
+import com.example.cloudlibrary.volley.toolbox.JsonObjectRequest;
+import com.example.cloudlibrary.volley.toolbox.Volley;
 import com.facebook.Request;
 import com.facebook.Response;
 import com.facebook.Session;
@@ -30,6 +40,8 @@ public class MainActivity extends FragmentActivity {
 
 	private MainFragment mainFragment;
 
+    private Comment cmt;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,43 +54,43 @@ public class MainActivity extends FragmentActivity {
 			mainFragment = new MainFragment();
 			getSupportFragmentManager().beginTransaction()
 					.add(android.R.id.content, mainFragment).commit();
-			Session.openActiveSession(this, true, new Session.StatusCallback() {
-				// callback when session changes state
-				@Override
-				public void call(Session session, SessionState state,
-						Exception exception) {
-					if (session.isOpened()) {
-
-						Request.newMeRequest(session,
-								new Request.GraphUserCallback() {
-
-									@Override
-									public void onCompleted(GraphUser user,
-											Response response) {
-										if (user != null) {
-											TextView welcome = (TextView) findViewById(R.id.welcome);
-											welcome.setText("username = "
-													+ user.getUsername()
-													+ "; id = " + user.getId());
-											System.out.println(user
-													.getUsername()
-													+ " id -> "
-													+ user.getId());
-											Editor editor = prefs.edit();
-											// editor.putString("username",
-											// user.getUsername());
-											editor.putString("name",
-													user.getName());
-											editor.putString("id", user.getId());
-											editor.commit();
-										}
-									}
-
-								}).executeAsync();
-
-					}
-				}
-			});
+//			Session.openActiveSession(this, true, new Session.StatusCallback() {
+//				// callback when session changes state
+//				@Override
+//				public void call(Session session, SessionState state,
+//						Exception exception) {
+//					if (session.isOpened()) {
+//
+//						Request.newMeRequest(session,
+//								new Request.GraphUserCallback() {
+//
+//									@Override
+//									public void onCompleted(GraphUser user,
+//											Response response) {
+//										if (user != null) {
+//											TextView welcome = (TextView) findViewById(R.id.welcome);
+//											welcome.setText("username = "
+//													+ user.getUsername()
+//													+ "; id = " + user.getId());
+//											System.out.println(user
+//													.getUsername()
+//													+ " id -> "
+//													+ user.getId());
+//											Editor editor = prefs.edit();
+//											// editor.putString("username",
+//											// user.getUsername());
+//											editor.putString("name",
+//													user.getName());
+//											editor.putString("id", user.getId());
+//											editor.commit();
+//										}
+//									}
+//
+//								}).executeAsync();
+//
+//					}
+//				}
+//			});
 			
 
 		} else {
@@ -89,7 +101,9 @@ public class MainActivity extends FragmentActivity {
 
 		gps = new GPSTracker(this);
 
-		prefs = getSharedPreferences("pref", 0);
+
+        prefs = getSharedPreferences("pref", 0);
+
 	}
 
 	private String userName = null;
@@ -117,7 +131,7 @@ public class MainActivity extends FragmentActivity {
 				double latitude = gps.getLatitude();
 				double longitude = gps.getLongitude();
 				SyncCommentList syncComment = new SyncCommentList(this,
-						progress);
+						progress, cmt);
 				syncComment.makeRequest(longitude, latitude);
 			} else {
 				gps.showSettingsAlert();
@@ -134,4 +148,6 @@ public class MainActivity extends FragmentActivity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+
+
 }

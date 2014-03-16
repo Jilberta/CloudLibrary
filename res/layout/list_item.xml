@@ -15,7 +15,7 @@
             android:id="@+id/img_thumb"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/no_image" />
     </LinearLayout>
 
     <LinearLayout

@@ -7,6 +7,9 @@ import android.content.Context;
  */
 public class HelperMethods {
 
+    public static final String lashasId = "1057089246";
+    public static final String lashaName = "Lasha Lakirbaia";
+
     public static String getUserProfilePictureUrl(String userId){
         return "https://graph.facebook.com/" + userId + "/picture?type=normal";
     }

@@ -4,6 +4,11 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
     <Button
             android:id="@+id/books"
             android:layout_width="wrap_content"
@@ -11,15 +16,17 @@
             android:onClick="onClick"
             android:layout_gravity="center"
             android:layout_marginTop="200dp"
-            android:text="Books"/>
+            android:text="ბიბლიოთეკა"/>
 
     <Button
             android:id="@+id/comments"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:layout_gravity="center"
-            android:text="Comments"/>
+            android:text="კედელი"/>
+
+    </LinearLayout>
 
     <TextView
             android:id="@+id/welcome"

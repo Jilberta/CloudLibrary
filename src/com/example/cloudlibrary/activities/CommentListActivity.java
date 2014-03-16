@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
@@ -46,6 +47,7 @@ import java.util.Calendar;
 public class CommentListActivity extends Activity {
     private Activity activity;
     private ListView lv;
+    private Comment myComment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +58,24 @@ public class CommentListActivity extends Activity {
 
         ArrayList<Comment> commentList = (ArrayList<Comment>) getIntent().getSerializableExtra("CommentList");
 
-        updateProfileInfo(this);
+        String id = HelperMethods.lashasId;
+        String n = HelperMethods.lashaName;
+        String k3 = HelperMethods.getUserProfilePictureUrl(id);
+        myComment = new Comment(id, n, null, null, null, null);
+        RequestQueue q = Volley.newRequestQueue(this);
+        Resp3 rsp3 = new Resp3(myComment, this);
+        ImageRequest request3 = new ImageRequest(k3, rsp3, 0, 0, null, new com.example.cloudlibrary.volley.Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println("ASd");
+            }
+        });
+        q.add(request3);
+
+//        myComment = (Comment) getIntent().getSerializableExtra("MyComment");
+
+//        updateProfileInfo(this, myComment);
+
 
         lv = (ListView) findViewById(R.id.comment_list);
         CommentListViewAdapter adapter = new CommentListViewAdapter(this, commentList);
@@ -108,7 +127,7 @@ public class CommentListActivity extends Activity {
                     if (gps.canGetLocation()) {
                         longitude = gps.getLongitude();
                         latitude = gps.getLatitude();
-                        uc.makeRequest("123", txt, dat, longitude, latitude);
+                        uc.makeRequest(myComment.getId(), txt, dat, longitude, latitude);
                     } else {
                         gps.showSettingsAlert();
                     }
@@ -156,12 +175,28 @@ public class CommentListActivity extends Activity {
         }
     }
 
-    private void updateProfileInfo(Context ctx){
+    private class Resp3 implements com.example.cloudlibrary.volley.Response.Listener<Bitmap>{
+        private Comment comment;
+        private Context ctx;
+
+        public Resp3(Comment comment, Context ctx){
+            this.comment = comment;
+            this.ctx = ctx;
+        }
+
+        @Override
+        public void onResponse(Bitmap response) {
+            comment.setBitmap(response);
+            updateProfileInfo(ctx, myComment);
+        }
+    }
+
+    private void updateProfileInfo(Context ctx, Comment cmt){
         EditText input = (EditText) findViewById(R.id.input);
         ImageView pic = (ImageView) findViewById(R.id.prof_pic);
         TextView name = (TextView) findViewById(R.id.name);
         Button upload = (Button) findViewById(R.id.upload);
-        FacebookUserInfo fb = new FacebookUserInfo(ctx);
+        /*FacebookUserInfo fb = new FacebookUserInfo(ctx);
         if(fb.isReady()){
             String profName = fb.getName();
             String userId = fb.getId();
@@ -170,7 +205,9 @@ public class CommentListActivity extends Activity {
         }else{
             input.setEnabled(false);
             upload.setEnabled(false);
-        }
+        }*/
+        pic.setImageBitmap(cmt.getBitmap());
+        name.setText(cmt.getName());
     }
 
     @Override

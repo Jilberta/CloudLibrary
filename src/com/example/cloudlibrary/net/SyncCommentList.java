@@ -33,11 +33,13 @@ import java.util.ArrayList;
 public class SyncCommentList {
     private Context ctx;
     private ProgressDialog progress;
+    private Comment cmt;
     private int count;
 
-    public SyncCommentList(Context ctx, ProgressDialog progress){
+    public SyncCommentList(Context ctx, ProgressDialog progress, Comment cmt){
         this.ctx = ctx;
         this.progress = progress;
+        this.cmt = cmt;
     }
 
     public void makeRequest(double longitude, double latitude){
@@ -52,13 +54,14 @@ public class SyncCommentList {
                 count = commentList.size();
                 Intent k = new Intent(ctx, CommentListActivity.class);
                 k.putExtra("CommentList", commentList);
+                k.putExtra("MyComment", cmt);
                 ctx.startActivity(k);
 //                Toast.makeText(ctx, response.toString(), Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                String txt = new String(error.networkResponse.data) + " - " + error.networkResponse.statusCode;
+//                String txt = new String(error.networkResponse.data) + " - " + error.networkResponse.statusCode;
                 progress.dismiss();
             }
         });

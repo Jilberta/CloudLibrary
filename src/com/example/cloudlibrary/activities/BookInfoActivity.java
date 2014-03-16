@@ -2,20 +2,7 @@ package com.example.cloudlibrary.activities;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import com.example.cloudlibrary.helpers.ServiceAddresses;
-import com.example.cloudlibrary.model.Book;
-import com.example.cloudlibrary.qrcode.Contents;
-import com.example.cloudlibrary.qrcode.QRCodeEncoder;
-import com.example.cloudlibrary.volley.RequestQueue;
-import com.example.cloudlibrary.volley.toolbox.ImageLoader;
-import com.example.cloudlibrary.volley.toolbox.NetworkImageView;
-import com.example.cloudlibrary.volley.toolbox.Volley;
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.WriterException;
+
 import android.app.Activity;
 import android.app.DownloadManager;
 import android.app.DownloadManager.Request;
@@ -24,19 +11,24 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.LruCache;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.cloudlibrary.helpers.ServiceAddresses;
+import com.example.cloudlibrary.model.Book;
+import com.example.cloudlibrary.net.AsyncImageLoader;
+import com.example.cloudlibrary.qrcode.Contents;
+import com.example.cloudlibrary.qrcode.QRCodeEncoder;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.WriterException;
 
 public class BookInfoActivity extends Activity {
 
@@ -51,7 +43,7 @@ public class BookInfoActivity extends Activity {
 
 		b = (Book) getIntent().getSerializableExtra("book");
 
-//        ImageView bookImage = (ImageView) findViewById(R.id.bookImage);
+		ImageView bookImage = (ImageView) findViewById(R.id.bookImage);
 		TextView bookAuthor = (TextView) findViewById(R.id.bookAuthor);
 		TextView bookTitle = (TextView) findViewById(R.id.bookTitle);
 		TextView bookDescr = (TextView) findViewById(R.id.reviewTxt);
@@ -59,8 +51,14 @@ public class BookInfoActivity extends Activity {
         bookAuthor.setText(b.getAuthorInfo());
 		bookTitle.setText(b.getTitle());
 		bookDescr.setText(b.getBriefDescription());
+		setBookImage(bookImage, b);
 	}
 
+	private void setBookImage(final ImageView bookImage, final Book b) {
+		AsyncImageLoader loader = new AsyncImageLoader(bookImage);
+		loader.execute(ServiceAddresses.IP + b.getImageUrl());
+	}
+	
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.download:

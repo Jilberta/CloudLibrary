@@ -30,9 +30,12 @@ public class CustomAdapter extends ArrayAdapter<Book> {
 		LayoutInflater inflater = (LayoutInflater) context
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.list_item, parent, false);
-		TextView textView = (TextView) rowView.findViewById(R.id.bookName);
-		textView.setText(values.get(position).getTitle());
-
+		
+		TextView textViewTitle = (TextView) rowView.findViewById(R.id.title);
+		textViewTitle.setText(values.get(position).getTitle());
+		TextView textViewAuthor = (TextView) rowView.findViewById(R.id.author);
+		textViewAuthor.setText(values.get(position).getAuthorInfo());
+		
 		return rowView;
 	}
 }

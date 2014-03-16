@@ -1,21 +1,42 @@
 package com.example.cloudlibrary.model;
 
+import android.graphics.Bitmap;
+
 import java.io.Serializable;
 
 /**
  * Created by Jay on 3/15/14.
  */
 public class Comment implements Serializable {
-    private String name, date, comment;
+    private String id, name, date, comment;
+    private Bitmap bitmap;
     private static final long serialVersionUID = 1L;
 
     public Comment(){
     }
 
-    public Comment(String name, String date, String comment){
+    public Comment(String id, String name, String date, String comment, Bitmap bitmap){
+        this.id = id;
         this.name = name;
         this.date = date;
         this.comment = comment;
+        this.bitmap = bitmap;
+    }
+
+    public void setId(String id){
+        this.id = id;
+    }
+
+    public String getId(){
+        return this.id;
+    }
+
+    public void setBitmap(Bitmap bitmap){
+        this.bitmap = bitmap;
+    }
+
+    public Bitmap getBitmap(){
+        return this.bitmap;
     }
 
     public void setName(String name){

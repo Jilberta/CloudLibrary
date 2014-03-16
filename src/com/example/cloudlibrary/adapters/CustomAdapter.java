@@ -37,7 +37,7 @@ public class CustomAdapter extends ArrayAdapter<Book> {
 		TextView textViewAuthor = (TextView) rowView.findViewById(R.id.author);
 		textViewAuthor.setText(values.get(position).getAuthorInfo());
 
-        ImageView img = (ImageView) rowView.findViewById(R.id.img);
+        ImageView img = (ImageView) rowView.findViewById(R.id.img_thumb);
         Book book = values.get(position);
         if(book.getBitmap() != null)
             img.setImageBitmap(book.getBitmap());

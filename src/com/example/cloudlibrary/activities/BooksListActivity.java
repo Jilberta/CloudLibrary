@@ -45,9 +45,15 @@ public class BooksListActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 				final Book item = (Book) arg0.getItemAtPosition(arg2);
 				Toast.makeText(arg1.getContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
-                item.setBitmap(null);
+                Book cloneBook = null;
+                try {
+					cloneBook = (Book) item.clone();
+					cloneBook.setBitmap(null);
+				} catch (CloneNotSupportedException e) {
+					e.printStackTrace();
+				}
 				Intent i = new Intent(BooksListActivity.this, BookInfoActivity.class);
-				i.putExtra("book", item);
+				i.putExtra("book", cloneBook);
 				startActivity(i);
 			}
 		});

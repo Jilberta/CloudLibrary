@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 
 import java.io.Serializable;
 
-public class Book implements Serializable{
+public class Book implements Serializable, Cloneable{
 	/**
 	 * 
 	 */
@@ -63,6 +63,10 @@ public class Book implements Serializable{
 
 	public String getTitle() {
 		return title;
+	}
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 
 	public String getDownloadUrl() {

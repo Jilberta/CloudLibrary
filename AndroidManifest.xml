@@ -35,7 +35,7 @@
         </activity>
         <activity
                 android:name="com.example.cloudlibrary.activities.CommentListActivity"
-                android:label="Books" >
+                android:label="Comments" >
         </activity>
          <activity android:name="com.facebook.LoginActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar"

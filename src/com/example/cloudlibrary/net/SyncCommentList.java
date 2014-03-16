@@ -58,6 +58,7 @@ public class SyncCommentList {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                String txt = new String(error.networkResponse.data) + " - " + error.networkResponse.statusCode;
                 progress.dismiss();
             }
         });

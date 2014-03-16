@@ -29,17 +29,17 @@
         </activity>
         <activity
             android:name="com.example.cloudlibrary.activities.BooksListActivity"
-            android:label="Books"
+            android:label="წიგნის თარო"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.cloudlibrary.activities.BookInfoActivity"
-            android:label="Book Info"
+            android:label="წიგნის თარო"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.cloudlibrary.activities.CommentListActivity"
-            android:label="Comments"
+            android:label="წარწერები"
             android:screenOrientation="portrait" >
         </activity>
         <activity

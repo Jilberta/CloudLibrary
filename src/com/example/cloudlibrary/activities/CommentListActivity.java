@@ -2,6 +2,7 @@ package com.example.cloudlibrary.activities;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,9 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
+
 import com.example.cloudlibrary.adapters.CommentListViewAdapter;
 import com.example.cloudlibrary.controllers.GPSTracker;
+import com.example.cloudlibrary.helpers.HelperMethods;
 import com.example.cloudlibrary.model.Comment;
 import com.example.cloudlibrary.net.SyncBookListUpdate;
 import com.example.cloudlibrary.net.SyncCommentListUpdate;
@@ -35,6 +40,8 @@ public class CommentListActivity extends Activity {
         activity = this;
 
         ArrayList<Comment> commentList = (ArrayList<Comment>) getIntent().getSerializableExtra("CommentList");
+
+        updateProfileInfo(this);
 
         lv = (ListView) findViewById(R.id.comment_list);
         CommentListViewAdapter adapter = new CommentListViewAdapter(this, commentList);
@@ -63,6 +70,23 @@ public class CommentListActivity extends Activity {
                 }
             }
         });
+    }
+
+    private void updateProfileInfo(Context ctx){
+        EditText input = (EditText) findViewById(R.id.input);
+        ImageView pic = (ImageView) findViewById(R.id.prof_pic);
+        TextView name = (TextView) findViewById(R.id.name);
+        Button upload = (Button) findViewById(R.id.upload);
+        FacebookUserInfo fb = new FacebookUserInfo(ctx);
+        if(fb.isReady()){
+            String profName = fb.getName();
+            String userId = fb.getId();
+            String picUrl = HelperMethods.getUserProfilePictureUrl(userId);
+            System.out.println("ASd");
+        }else{
+            input.setEnabled(false);
+            upload.setEnabled(false);
+        }
     }
 
     @Override

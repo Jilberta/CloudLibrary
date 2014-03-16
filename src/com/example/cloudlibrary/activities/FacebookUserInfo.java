@@ -20,7 +20,7 @@ public class FacebookUserInfo {
 	}
 	
 	public boolean isReady(){
-		return getId()!=null;
+		return getId()!= null;
 	}
 	
 }

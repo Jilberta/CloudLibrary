@@ -32,14 +32,16 @@ public class CustomAdapter extends ArrayAdapter<Book> {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.list_item, parent, false);
 
-		TextView textView = (TextView) rowView.findViewById(R.id.bookName);
-		textView.setText(values.get(position).getTitle());
+		TextView textViewTitle = (TextView) rowView.findViewById(R.id.title);
+		textViewTitle.setText(values.get(position).getTitle());
+		TextView textViewAuthor = (TextView) rowView.findViewById(R.id.author);
+		textViewAuthor.setText(values.get(position).getAuthorInfo());
 
-        ImageView img = (ImageView) rowView.findViewById(R.id.img);
+        ImageView img = (ImageView) rowView.findViewById(R.id.img_thumb);
         Book book = values.get(position);
         if(book.getBitmap() != null)
             img.setImageBitmap(book.getBitmap());
-
+		
 		return rowView;
 	}
 }
